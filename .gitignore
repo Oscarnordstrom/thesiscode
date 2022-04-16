@@ -1,0 +1,8 @@
+*.bin
+*.pt
+*.0
+*.png
+*.jpeg
+*.pdf
+**/cache_dir
+models/*/datasets/
