@@ -4,5 +4,6 @@
 *.png
 *.jpeg
 *.pdf
+*.deb
 **/cache_dir
 models/*/datasets/
