@@ -7,15 +7,15 @@ PER_GPU_TRAIN_BATCH_SIZE=16
 PER_GPU_EVAL_BATCH_SIZE=16
 WARMUP_STEPS=5400
 PRUNING_METHOD=topK
-SEED=101
+SEED=350
 
-DATA_DIR=D:/Programming/mastersthesis/models/movement_pruning/datasets/glue_data/SST-2
-CACHE_DIR=D:/Programming/mastersthesis/models/movement_pruning/cache_dir
+DATA_DIR=~/thesiscode/datasets/glue_data/SST-2
+CACHE_DIR=~/thesiscode/models/movement_pruning/cache_dir
 
-OUTPUT_DIR=D:/Programming/mastersthesis/models/movement_pruning/results/bert/threshold09
+OUTPUT_DIR=~/thesiscode/models/movement_pruning/results/bert_3/threshold09
 FINAL_THRESHOLD=0.9
 
-python D:/Programming/mastersthesis/models/transformers/examples/research_projects/movement-pruning/masked_run_glue.py \
+python3 ~/thesiscode/models/transformers/examples/research_projects/movement-pruning/masked_run_glue.py \
     --data_dir $DATA_DIR \
     --task_name $TASK_NAME \
     --output_dir $OUTPUT_DIR \
@@ -33,10 +33,10 @@ python D:/Programming/mastersthesis/models/transformers/examples/research_projec
     --initial_warmup 1 --final_warmup 1 --warmup_steps $WARMUP_STEPS \
     --eval_all_checkpoints --seed $SEED
 
-OUTPUT_DIR=D:/Programming/mastersthesis/models/movement_pruning/results/bert/threshold07
+OUTPUT_DIR=~/thesiscode/models/movement_pruning/results/bert_3/threshold07
 FINAL_THRESHOLD=0.7
 
-python D:/Programming/mastersthesis/models/transformers/examples/research_projects/movement-pruning/masked_run_glue.py \
+python3 ~/thesiscode/models/transformers/examples/research_projects/movement-pruning/masked_run_glue.py \
     --data_dir $DATA_DIR \
     --task_name $TASK_NAME \
     --output_dir $OUTPUT_DIR \
@@ -54,10 +54,10 @@ python D:/Programming/mastersthesis/models/transformers/examples/research_projec
     --initial_warmup 1 --final_warmup 1 --warmup_steps $WARMUP_STEPS \
     --eval_all_checkpoints --seed $SEED
 
-OUTPUT_DIR=D:/Programming/mastersthesis/models/movement_pruning/results/bert/threshold05
+OUTPUT_DIR=~/thesiscode/models/movement_pruning/results/bert_3/threshold05
 FINAL_THRESHOLD=0.5
 
-python D:/Programming/mastersthesis/models/transformers/examples/research_projects/movement-pruning/masked_run_glue.py \
+python3 ~/thesiscode/models/transformers/examples/research_projects/movement-pruning/masked_run_glue.py \
     --data_dir $DATA_DIR \
     --task_name $TASK_NAME \
     --output_dir $OUTPUT_DIR \
@@ -75,10 +75,10 @@ python D:/Programming/mastersthesis/models/transformers/examples/research_projec
     --initial_warmup 1 --final_warmup 1 --warmup_steps $WARMUP_STEPS \
     --eval_all_checkpoints --seed $SEED
 
-OUTPUT_DIR=D:/Programming/mastersthesis/models/movement_pruning/results/bert/threshold025
+OUTPUT_DIR=~/thesiscode/models/movement_pruning/results/bert_3/threshold025
 FINAL_THRESHOLD=0.25
 
-python D:/Programming/mastersthesis/models/transformers/examples/research_projects/movement-pruning/masked_run_glue.py \
+python3 ~/thesiscode/models/transformers/examples/research_projects/movement-pruning/masked_run_glue.py \
     --data_dir $DATA_DIR \
     --task_name $TASK_NAME \
     --output_dir $OUTPUT_DIR \
@@ -96,10 +96,10 @@ python D:/Programming/mastersthesis/models/transformers/examples/research_projec
     --initial_warmup 1 --final_warmup 1 --warmup_steps $WARMUP_STEPS \
     --eval_all_checkpoints --seed $SEED
 
-OUTPUT_DIR=D:/Programming/mastersthesis/models/movement_pruning/results/bert/threshold015
+OUTPUT_DIR=~/thesiscode/models/movement_pruning/results/bert_3/threshold015
 FINAL_THRESHOLD=0.15
 
-python D:/Programming/mastersthesis/models/transformers/examples/research_projects/movement-pruning/masked_run_glue.py \
+python3 ~/thesiscode/models/transformers/examples/research_projects/movement-pruning/masked_run_glue.py \
     --data_dir $DATA_DIR \
     --task_name $TASK_NAME \
     --output_dir $OUTPUT_DIR \
@@ -117,10 +117,10 @@ python D:/Programming/mastersthesis/models/transformers/examples/research_projec
     --initial_warmup 1 --final_warmup 1 --warmup_steps $WARMUP_STEPS \
     --eval_all_checkpoints --seed $SEED
 
-OUTPUT_DIR=D:/Programming/mastersthesis/models/movement_pruning/results/bert/threshold003
+OUTPUT_DIR=~/thesiscode/models/movement_pruning/results/bert_3/threshold003
 FINAL_THRESHOLD=0.03
 
-python D:/Programming/mastersthesis/models/transformers/examples/research_projects/movement-pruning/masked_run_glue.py \
+python3 ~/thesiscode/models/transformers/examples/research_projects/movement-pruning/masked_run_glue.py \
     --data_dir $DATA_DIR \
     --task_name $TASK_NAME \
     --output_dir $OUTPUT_DIR \
