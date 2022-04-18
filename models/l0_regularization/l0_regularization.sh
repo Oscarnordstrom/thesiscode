@@ -13,7 +13,7 @@ DATA_DIR=D:/Programming/mastersthesis/models/l0_regularization/datasets/glue_dat
 CACHE_DIR=D:/Programming/mastersthesis/models/l0_regularization/cache_dir
 
 FINAL_LAMBDA=0
-OUTPUT_DIR=D:/Programming/mastersthesis/models/l0_regularization/results/bert/lambda0
+OUTPUT_DIR=D:/Programming/mastersthesis/models/l0_regularization/results/bert_3/lambda0
 
 python D:/Programming/mastersthesis/models/transformers/examples/research_projects/movement-pruning/masked_run_glue.py \
     --data_dir $DATA_DIR \
@@ -21,7 +21,7 @@ python D:/Programming/mastersthesis/models/transformers/examples/research_projec
     --output_dir $OUTPUT_DIR \
     --cache_dir $CACHE_DIR \
     --save_steps $SAVE_STEPS \
-    --do_train --do_eval --do_lower_case \
+    --do_eval --do_lower_case \
     --model_type masked_bert \
     --model_name_or_path $MODEL_NAME_OR_PATH \
     --per_gpu_train_batch_size 16 \
@@ -35,7 +35,7 @@ python D:/Programming/mastersthesis/models/transformers/examples/research_projec
     --eval_all_checkpoints --seed $SEED
 
 FINAL_LAMBDA=1
-OUTPUT_DIR=D:/Programming/mastersthesis/models/l0_regularization/results/bert/lambda1
+OUTPUT_DIR=D:/Programming/mastersthesis/models/l0_regularization/results/bert_3/lambda1
 
 python D:/Programming/mastersthesis/models/transformers/examples/research_projects/movement-pruning/masked_run_glue.py \
     --data_dir $DATA_DIR \
@@ -43,7 +43,7 @@ python D:/Programming/mastersthesis/models/transformers/examples/research_projec
     --output_dir $OUTPUT_DIR \
     --cache_dir $CACHE_DIR \
     --save_steps $SAVE_STEPS \
-    --do_train --do_eval --do_lower_case \
+    --do_eval --do_lower_case \
     --model_type masked_bert \
     --model_name_or_path $MODEL_NAME_OR_PATH \
     --per_gpu_train_batch_size 16 \
@@ -57,7 +57,7 @@ python D:/Programming/mastersthesis/models/transformers/examples/research_projec
     --eval_all_checkpoints --seed $SEED
 
 FINAL_LAMBDA=5
-OUTPUT_DIR=D:/Programming/mastersthesis/models/l0_regularization/results/bert/lambda5
+OUTPUT_DIR=D:/Programming/mastersthesis/models/l0_regularization/results/bert_3/lambda5
 
 python D:/Programming/mastersthesis/models/transformers/examples/research_projects/movement-pruning/masked_run_glue.py \
     --data_dir $DATA_DIR \
@@ -65,7 +65,7 @@ python D:/Programming/mastersthesis/models/transformers/examples/research_projec
     --output_dir $OUTPUT_DIR \
     --cache_dir $CACHE_DIR \
     --save_steps $SAVE_STEPS \
-    --do_train --do_eval --do_lower_case \
+    --do_eval --do_lower_case \
     --model_type masked_bert \
     --model_name_or_path $MODEL_NAME_OR_PATH \
     --per_gpu_train_batch_size 16 \
@@ -79,7 +79,7 @@ python D:/Programming/mastersthesis/models/transformers/examples/research_projec
     --eval_all_checkpoints --seed $SEED
 
 FINAL_LAMBDA=25
-OUTPUT_DIR=D:/Programming/mastersthesis/models/l0_regularization/results/bert/lambda25
+OUTPUT_DIR=D:/Programming/mastersthesis/models/l0_regularization/results/bert_3/lambda25
 
 python D:/Programming/mastersthesis/models/transformers/examples/research_projects/movement-pruning/masked_run_glue.py \
     --data_dir $DATA_DIR \
@@ -87,7 +87,7 @@ python D:/Programming/mastersthesis/models/transformers/examples/research_projec
     --output_dir $OUTPUT_DIR \
     --cache_dir $CACHE_DIR \
     --save_steps $SAVE_STEPS \
-    --do_train --do_eval --do_lower_case \
+    --do_eval --do_lower_case \
     --model_type masked_bert \
     --model_name_or_path $MODEL_NAME_OR_PATH \
     --per_gpu_train_batch_size 16 \
@@ -101,7 +101,7 @@ python D:/Programming/mastersthesis/models/transformers/examples/research_projec
     --eval_all_checkpoints --seed $SEED
 
 FINAL_LAMBDA=50
-OUTPUT_DIR=D:/Programming/mastersthesis/models/l0_regularization/results/bert/lambda50
+OUTPUT_DIR=D:/Programming/mastersthesis/models/l0_regularization/results/bert_3/lambda50
 
 python D:/Programming/mastersthesis/models/transformers/examples/research_projects/movement-pruning/masked_run_glue.py \
     --data_dir $DATA_DIR \
@@ -109,7 +109,7 @@ python D:/Programming/mastersthesis/models/transformers/examples/research_projec
     --output_dir $OUTPUT_DIR \
     --cache_dir $CACHE_DIR \
     --save_steps $SAVE_STEPS \
-    --do_train --do_eval --do_lower_case \
+    --do_eval --do_lower_case \
     --model_type masked_bert \
     --model_name_or_path $MODEL_NAME_OR_PATH \
     --per_gpu_train_batch_size 16 \
@@ -123,7 +123,7 @@ python D:/Programming/mastersthesis/models/transformers/examples/research_projec
     --eval_all_checkpoints --seed $SEED
 
 FINAL_LAMBDA=250
-OUTPUT_DIR=D:/Programming/mastersthesis/models/l0_regularization/results/bert/lambda250
+OUTPUT_DIR=D:/Programming/mastersthesis/models/l0_regularization/results/bert_3/lambda250
 
 python D:/Programming/mastersthesis/models/transformers/examples/research_projects/movement-pruning/masked_run_glue.py \
     --data_dir $DATA_DIR \
@@ -131,7 +131,7 @@ python D:/Programming/mastersthesis/models/transformers/examples/research_projec
     --output_dir $OUTPUT_DIR \
     --cache_dir $CACHE_DIR \
     --save_steps $SAVE_STEPS \
-    --do_train --do_eval --do_lower_case \
+    --do_eval --do_lower_case \
     --model_type masked_bert \
     --model_name_or_path $MODEL_NAME_OR_PATH \
     --per_gpu_train_batch_size 16 \
