@@ -1,5 +1,5 @@
 MODEL_TYPE=masked_bert
-MODEL_NAME_OR_PATH=bert-base-multilingual-cased
+MODEL_NAME_OR_PATH=bert-base-uncased
 TASK_NAME=SST-2
 NUM_TRAIN_EPOCHS=10
 SAVE_STEPS=10000
@@ -12,7 +12,7 @@ SEED=101
 DATA_DIR=~/thesiscode/datasets/glue_data/SST-2
 CACHE_DIR=~/thesiscode/models/magnitude_pruning/cache_dir
 
-OUTPUT_DIR=~/thesiscode/models/magnitude_pruning/results/mbert_2/threshold003
+OUTPUT_DIR=~/thesiscode/models/magnitude_pruning/results/bert_3/threshold003
 FINAL_THRESHOLD=0.03
 
 python3 ~/thesiscode/models/transformers/examples/research_projects/movement-pruning/masked_run_glue.py \
@@ -21,7 +21,7 @@ python3 ~/thesiscode/models/transformers/examples/research_projects/movement-pru
     --output_dir $OUTPUT_DIR \
     --cache_dir $CACHE_DIR \
     --save_steps $SAVE_STEPS \
-    --do_train --do_eval --do_lower_case \
+    --do_eval --do_lower_case \
     --model_type $MODEL_TYPE \
     --model_name_or_path $MODEL_NAME_OR_PATH \
     --per_gpu_train_batch_size 16 \
@@ -33,7 +33,7 @@ python3 ~/thesiscode/models/transformers/examples/research_projects/movement-pru
     --initial_warmup 1 --final_warmup 1 --warmup_steps $WARMUP_STEPS \
     --eval_all_checkpoints --seed $SEED
 
-OUTPUT_DIR=~/thesiscode/models/magnitude_pruning/results/mbert_2/threshold015
+OUTPUT_DIR=~/thesiscode/models/magnitude_pruning/results/bert_3/threshold015
 FINAL_THRESHOLD=0.15
 
 python3 ~/thesiscode/models/transformers/examples/research_projects/movement-pruning/masked_run_glue.py \
@@ -42,7 +42,7 @@ python3 ~/thesiscode/models/transformers/examples/research_projects/movement-pru
     --output_dir $OUTPUT_DIR \
     --cache_dir $CACHE_DIR \
     --save_steps $SAVE_STEPS \
-    --do_train --do_eval --do_lower_case \
+    --do_eval --do_lower_case \
     --model_type $MODEL_TYPE \
     --model_name_or_path $MODEL_NAME_OR_PATH \
     --per_gpu_train_batch_size 16 \
@@ -54,7 +54,7 @@ python3 ~/thesiscode/models/transformers/examples/research_projects/movement-pru
     --initial_warmup 1 --final_warmup 1 --warmup_steps $WARMUP_STEPS \
     --eval_all_checkpoints --seed $SEED
 
-OUTPUT_DIR=~/thesiscode/models/magnitude_pruning/results/mbert_2/threshold025
+OUTPUT_DIR=~/thesiscode/models/magnitude_pruning/results/bert_3/threshold025
 FINAL_THRESHOLD=0.25
 
 python3 ~/thesiscode/models/transformers/examples/research_projects/movement-pruning/masked_run_glue.py \
@@ -63,7 +63,7 @@ python3 ~/thesiscode/models/transformers/examples/research_projects/movement-pru
     --output_dir $OUTPUT_DIR \
     --cache_dir $CACHE_DIR \
     --save_steps $SAVE_STEPS \
-    --do_train --do_eval --do_lower_case \
+    --do_eval --do_lower_case \
     --model_type $MODEL_TYPE \
     --model_name_or_path $MODEL_NAME_OR_PATH \
     --per_gpu_train_batch_size 16 \
@@ -75,7 +75,7 @@ python3 ~/thesiscode/models/transformers/examples/research_projects/movement-pru
     --initial_warmup 1 --final_warmup 1 --warmup_steps $WARMUP_STEPS \
     --eval_all_checkpoints --seed $SEED
 
-OUTPUT_DIR=~/thesiscode/models/magnitude_pruning/results/mbert_2/threshold05
+OUTPUT_DIR=~/thesiscode/models/magnitude_pruning/results/bert_3/threshold05
 FINAL_THRESHOLD=0.5
 
 python3 ~/thesiscode/models/transformers/examples/research_projects/movement-pruning/masked_run_glue.py \
@@ -84,7 +84,7 @@ python3 ~/thesiscode/models/transformers/examples/research_projects/movement-pru
     --output_dir $OUTPUT_DIR \
     --cache_dir $CACHE_DIR \
     --save_steps $SAVE_STEPS \
-    --do_train --do_eval --do_lower_case \
+    --do_eval --do_lower_case \
     --model_type $MODEL_TYPE \
     --model_name_or_path $MODEL_NAME_OR_PATH \
     --per_gpu_train_batch_size 16 \
@@ -96,7 +96,7 @@ python3 ~/thesiscode/models/transformers/examples/research_projects/movement-pru
     --initial_warmup 1 --final_warmup 1 --warmup_steps $WARMUP_STEPS \
     --eval_all_checkpoints --seed $SEED
 
-OUTPUT_DIR=~/thesiscode/models/magnitude_pruning/results/mbert_2/threshold07
+OUTPUT_DIR=~/thesiscode/models/magnitude_pruning/results/bert_3/threshold07
 FINAL_THRESHOLD=0.7
 
 python3 ~/thesiscode/models/transformers/examples/research_projects/movement-pruning/masked_run_glue.py \
@@ -105,7 +105,7 @@ python3 ~/thesiscode/models/transformers/examples/research_projects/movement-pru
     --output_dir $OUTPUT_DIR \
     --cache_dir $CACHE_DIR \
     --save_steps $SAVE_STEPS \
-    --do_train --do_eval --do_lower_case \
+    --do_eval --do_lower_case \
     --model_type $MODEL_TYPE \
     --model_name_or_path $MODEL_NAME_OR_PATH \
     --per_gpu_train_batch_size 16 \
@@ -117,7 +117,7 @@ python3 ~/thesiscode/models/transformers/examples/research_projects/movement-pru
     --initial_warmup 1 --final_warmup 1 --warmup_steps $WARMUP_STEPS \
     --eval_all_checkpoints --seed $SEED
 
-OUTPUT_DIR=~/thesiscode/models/magnitude_pruning/results/mbert_2/threshold09
+OUTPUT_DIR=~/thesiscode/models/magnitude_pruning/results/bert_3/threshold09
 FINAL_THRESHOLD=0.9
 
 python3 ~/thesiscode/models/transformers/examples/research_projects/movement-pruning/masked_run_glue.py \
@@ -126,7 +126,7 @@ python3 ~/thesiscode/models/transformers/examples/research_projects/movement-pru
     --output_dir $OUTPUT_DIR \
     --cache_dir $CACHE_DIR \
     --save_steps $SAVE_STEPS \
-    --do_train --do_eval --do_lower_case \
+    --do_eval --do_lower_case \
     --model_type $MODEL_TYPE \
     --model_name_or_path $MODEL_NAME_OR_PATH \
     --per_gpu_train_batch_size 16 \
