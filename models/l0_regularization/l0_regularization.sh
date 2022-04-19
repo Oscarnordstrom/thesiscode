@@ -6,14 +6,14 @@ SAVE_STEPS=10000
 PER_GPU_TRAIN_BATCH_SIZE=16
 PER_GPU_EVAL_BATCH_SIZE=16
 WARMUP_STEPS=5400
-SEED=101
+SEED=350
 PRUNING_METHOD=l0
 
 DATA_DIR=D:/Programming/mastersthesis/models/l0_regularization/datasets/glue_data/SST-2
 CACHE_DIR=D:/Programming/mastersthesis/models/l0_regularization/cache_dir
 
 FINAL_LAMBDA=4.5
-OUTPUT_DIR=D:/Programming/mastersthesis/models/l0_regularization/results/mbert_2/lambda4_5
+OUTPUT_DIR=D:/Programming/mastersthesis/models/l0_regularization/results/mbert_3/lambda4_5
 
 python D:/Programming/mastersthesis/models/transformers/examples/research_projects/movement-pruning/masked_run_glue.py \
     --data_dir $DATA_DIR \
@@ -35,7 +35,7 @@ python D:/Programming/mastersthesis/models/transformers/examples/research_projec
     --eval_all_checkpoints --seed $SEED
 
 FINAL_LAMBDA=0.5
-OUTPUT_DIR=D:/Programming/mastersthesis/models/l0_regularization/results/mbert_2/lambda05
+OUTPUT_DIR=D:/Programming/mastersthesis/models/l0_regularization/results/mbert_3/lambda05
 
 python D:/Programming/mastersthesis/models/transformers/examples/research_projects/movement-pruning/masked_run_glue.py \
     --data_dir $DATA_DIR \
@@ -57,7 +57,7 @@ python D:/Programming/mastersthesis/models/transformers/examples/research_projec
     --eval_all_checkpoints --seed $SEED
 
 FINAL_LAMBDA=7
-OUTPUT_DIR=D:/Programming/mastersthesis/models/l0_regularization/results/mbert_2/lambda7
+OUTPUT_DIR=D:/Programming/mastersthesis/models/l0_regularization/results/mbert_3/lambda7
 
 python D:/Programming/mastersthesis/models/transformers/examples/research_projects/movement-pruning/masked_run_glue.py \
     --data_dir $DATA_DIR \
@@ -79,7 +79,7 @@ python D:/Programming/mastersthesis/models/transformers/examples/research_projec
     --eval_all_checkpoints --seed $SEED
 
 FINAL_LAMBDA=50
-OUTPUT_DIR=D:/Programming/mastersthesis/models/l0_regularization/results/mbert_2/lambda50
+OUTPUT_DIR=D:/Programming/mastersthesis/models/l0_regularization/results/mbert_3/lambda50
 
 python D:/Programming/mastersthesis/models/transformers/examples/research_projects/movement-pruning/masked_run_glue.py \
     --data_dir $DATA_DIR \
@@ -101,7 +101,7 @@ python D:/Programming/mastersthesis/models/transformers/examples/research_projec
     --eval_all_checkpoints --seed $SEED
 
 FINAL_LAMBDA=250
-OUTPUT_DIR=D:/Programming/mastersthesis/models/l0_regularization/results/mbert_2/lambda250
+OUTPUT_DIR=D:/Programming/mastersthesis/models/l0_regularization/results/mbert_3/lambda250
 
 python D:/Programming/mastersthesis/models/transformers/examples/research_projects/movement-pruning/masked_run_glue.py \
     --data_dir $DATA_DIR \

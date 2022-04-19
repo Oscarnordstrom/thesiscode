@@ -1,2 +1,2 @@
-acc = 0.911697247706422
-eval_avg_entropy = 1.0266753
+acc = 0.9126248646250771
+eval_avg_entropy = 1.026744
