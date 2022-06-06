@@ -1,0 +1,96 @@
+\begin{tabular}{lllllll}
+\toprule
+       pruning\_method & model & run &    parameter &  accuracy &      loss & weight \\
+\midrule
+    l0\_regularization & mbert &   1 &     lambda05 &  0.509174 &  1.970643 &    0.9 \\
+    l0\_regularization & mbert &   1 &    lambda250 &  0.826835 &  1.043753 &   0.03 \\
+    l0\_regularization & mbert &   1 &      lambda3 &  0.871893 &  1.059639 &    0.7 \\
+    l0\_regularization & mbert &   1 &    lambda4\_5 &  0.862385 &  1.036019 &    0.5 \\
+    l0\_regularization & mbert &   1 &     lambda50 &  0.855505 &   1.02131 &   0.15 \\
+    l0\_regularization & mbert &   1 &      lambda7 &  0.865826 &  1.028563 &   0.25 \\
+    l0\_regularization & mbert &   2 &     lambda05 &  0.509174 &  1.986647 &    0.9 \\
+    l0\_regularization & mbert &   2 &    lambda250 &  0.833716 &   1.04164 &   0.03 \\
+    l0\_regularization & mbert &   2 &      lambda3 &  0.872198 &  1.059639 &    0.7 \\
+    l0\_regularization & mbert &   2 &    lambda4\_5 &  0.870413 &  1.045694 &    0.5 \\
+    l0\_regularization & mbert &   2 &     lambda50 &  0.855505 &  1.021587 &   0.15 \\
+    l0\_regularization & mbert &   2 &      lambda7 &  0.864679 &  1.035837 &   0.25 \\
+    l0\_regularization & mbert &   3 &     lambda05 &  0.876147 &  1.059639 &    0.9 \\
+    l0\_regularization & mbert &   3 &    lambda250 &  0.822248 &  1.043404 &   0.03 \\
+    l0\_regularization & mbert &   3 &      lambda3 &  0.873124 &  1.059639 &    0.7 \\
+    l0\_regularization & mbert &   3 &    lambda4\_5 &  0.864679 &  1.044644 &    0.5 \\
+    l0\_regularization & mbert &   3 &     lambda50 &  0.861239 &  1.014924 &   0.15 \\
+    l0\_regularization & mbert &   3 &      lambda7 &   0.81422 &  1.091182 &   0.25 \\
+    magnitude\_pruning & mbert &   1 & threshold003 &  0.826835 &  1.251284 &   0.03 \\
+    magnitude\_pruning & mbert &   1 & threshold015 &  0.877294 &  1.055564 &   0.15 \\
+    magnitude\_pruning & mbert &   1 & threshold025 &  0.887615 &  1.041616 &   0.25 \\
+    magnitude\_pruning & mbert &   1 &  threshold05 &     0.875 &  1.037539 &    0.5 \\
+    magnitude\_pruning & mbert &   1 &  threshold07 &  0.886468 &  1.034884 &    0.7 \\
+    magnitude\_pruning & mbert &   1 &  threshold09 &  0.884174 &  1.047974 &    0.9 \\
+    magnitude\_pruning & mbert &   2 & threshold003 &  0.827982 &   1.26142 &   0.03 \\
+    magnitude\_pruning & mbert &   2 & threshold015 &  0.879587 &  1.067718 &   0.15 \\
+    magnitude\_pruning & mbert &   2 & threshold025 &   0.87844 &  1.055019 &   0.25 \\
+    magnitude\_pruning & mbert &   2 &  threshold05 &   0.87844 &  1.039404 &    0.5 \\
+    magnitude\_pruning & mbert &   2 &  threshold07 &  0.893349 &  1.052457 &    0.7 \\
+    magnitude\_pruning & mbert &   2 &  threshold09 &  0.879587 &  1.046145 &    0.9 \\
+    magnitude\_pruning & mbert &   3 & threshold003 &  0.816514 &  1.261746 &   0.03 \\
+    magnitude\_pruning & mbert &   3 & threshold015 &  0.864679 &  1.056075 &   0.15 \\
+    magnitude\_pruning & mbert &   3 & threshold025 &  0.877294 &  1.050389 &   0.25 \\
+    magnitude\_pruning & mbert &   3 &  threshold05 &  0.885321 &  1.048681 &    0.5 \\
+    magnitude\_pruning & mbert &   3 &  threshold07 &  0.868119 &   1.05019 &    0.7 \\
+    magnitude\_pruning & mbert &   3 &  threshold09 &   0.87844 &   1.05197 &    0.9 \\
+     movement\_pruning & mbert &   1 & threshold003 &  0.770642 &  1.619413 &   0.03 \\
+     movement\_pruning & mbert &   1 & threshold015 &  0.509174 &  1.982763 &   0.15 \\
+     movement\_pruning & mbert &   1 & threshold025 &  0.509174 &  1.965833 &   0.25 \\
+     movement\_pruning & mbert &   1 &  threshold05 &  0.509174 &  1.950327 &    0.5 \\
+     movement\_pruning & mbert &   1 &  threshold07 &  0.509174 &   1.96356 &    0.7 \\
+     movement\_pruning & mbert &   1 &  threshold09 &  0.509174 &  1.962536 &    0.9 \\
+     movement\_pruning & mbert &   2 & threshold003 &  0.509174 &  1.986576 &   0.03 \\
+     movement\_pruning & mbert &   2 & threshold015 &  0.509174 &  1.987699 &   0.15 \\
+     movement\_pruning & mbert &   2 & threshold025 &  0.509174 &  1.987365 &   0.25 \\
+     movement\_pruning & mbert &   2 &  threshold05 &  0.509174 &  1.986898 &    0.5 \\
+     movement\_pruning & mbert &   2 &  threshold07 &  0.509174 &  1.986449 &    0.7 \\
+     movement\_pruning & mbert &   2 &  threshold09 &  0.509174 &  1.968091 &    0.9 \\
+     movement\_pruning & mbert &   3 & threshold003 &  0.509174 &  1.895348 &   0.03 \\
+     movement\_pruning & mbert &   3 & threshold015 &  0.509174 &  1.985783 &   0.15 \\
+     movement\_pruning & mbert &   3 & threshold025 &  0.509174 &  1.986152 &   0.25 \\
+     movement\_pruning & mbert &   3 &  threshold05 &  0.509174 &  1.986302 &    0.5 \\
+     movement\_pruning & mbert &   3 &  threshold07 &  0.509174 &  1.985997 &    0.7 \\
+     movement\_pruning & mbert &   3 &  threshold09 &  0.509174 &  1.958571 &    0.9 \\
+soft\_movement\_pruning & mbert &   1 &     lambda05 &   0.87844 &  1.037377 &    0.9 \\
+soft\_movement\_pruning & mbert &   1 &     lambda08 &     0.875 &  1.035555 &    0.7 \\
+soft\_movement\_pruning & mbert &   1 &    lambda250 &  0.850917 &  1.094991 &   0.03 \\
+soft\_movement\_pruning & mbert &   1 &    lambda4\_5 &  0.872706 &  1.083864 &    0.5 \\
+soft\_movement\_pruning & mbert &   1 &     lambda50 &  0.853211 &  1.070504 &   0.15 \\
+soft\_movement\_pruning & mbert &   1 &      lambda7 &  0.881881 &  1.062657 &   0.25 \\
+soft\_movement\_pruning & mbert &   2 &     lambda05 &   0.87156 &   1.04137 &    0.9 \\
+soft\_movement\_pruning & mbert &   2 &     lambda08 &  0.858945 &   1.04407 &    0.7 \\
+soft\_movement\_pruning & mbert &   2 &    lambda250 &  0.851035 &  1.094423 &   0.03 \\
+soft\_movement\_pruning & mbert &   2 &    lambda4\_5 &  0.888761 &  1.064925 &    0.5 \\
+soft\_movement\_pruning & mbert &   2 &     lambda50 &  0.868119 &  1.068365 &   0.15 \\
+soft\_movement\_pruning & mbert &   2 &      lambda7 &  0.879881 &  1.069527 &   0.25 \\
+soft\_movement\_pruning & mbert &   3 &     lambda05 &  0.883028 &  1.047155 &    0.9 \\
+soft\_movement\_pruning & mbert &   3 &     lambda08 &  0.883028 &  1.056055 &    0.7 \\
+soft\_movement\_pruning & mbert &   3 &    lambda250 &  0.848378 &  1.094238 &   0.03 \\
+soft\_movement\_pruning & mbert &   3 &    lambda4\_5 &  0.864679 &  1.069112 &    0.5 \\
+soft\_movement\_pruning & mbert &   3 &     lambda50 &  0.807339 &   1.24814 &   0.15 \\
+soft\_movement\_pruning & mbert &   3 &      lambda7 &  0.884635 &  1.078423 &   0.25 \\
+             baseline &  bert &   1 & threshold100 &     0.875 &  1.043248 &    0.9 \\
+             baseline &  bert &   2 & threshold100 &  0.881881 &   1.04146 &    0.9 \\
+             baseline &  bert &   3 & threshold100 &     0.875 &  1.034639 &    0.9 \\
+             baseline &  bert &   1 & threshold100 &     0.875 &  1.043248 &    0.7 \\
+             baseline &  bert &   2 & threshold100 &  0.881881 &   1.04146 &    0.7 \\
+             baseline &  bert &   3 & threshold100 &     0.875 &  1.034639 &    0.7 \\
+             baseline &  bert &   1 & threshold100 &     0.875 &  1.043248 &    0.5 \\
+             baseline &  bert &   2 & threshold100 &  0.881881 &   1.04146 &    0.5 \\
+             baseline &  bert &   3 & threshold100 &     0.875 &  1.034639 &    0.5 \\
+             baseline &  bert &   1 & threshold100 &     0.875 &  1.043248 &   0.25 \\
+             baseline &  bert &   2 & threshold100 &  0.881881 &   1.04146 &   0.25 \\
+             baseline &  bert &   3 & threshold100 &     0.875 &  1.034639 &   0.25 \\
+             baseline &  bert &   1 & threshold100 &     0.875 &  1.043248 &   0.15 \\
+             baseline &  bert &   2 & threshold100 &  0.881881 &   1.04146 &   0.15 \\
+             baseline &  bert &   3 & threshold100 &     0.875 &  1.034639 &   0.15 \\
+             baseline &  bert &   1 & threshold100 &     0.875 &  1.043248 &   0.03 \\
+             baseline &  bert &   2 & threshold100 &  0.881881 &   1.04146 &   0.03 \\
+             baseline &  bert &   3 & threshold100 &     0.875 &  1.034639 &   0.03 \\
+\bottomrule
+\end{tabular}
